@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style-form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <div class="descuento">20% de descuento en todos los productos!</div>
+      <h1>Nombre Tienda</h1>
+      <div class="titulo">
+        <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href=""> Contacto</a></li>
+            <li><a href="">Registrarme</a></li>
+            <li><a href="">Ingresar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form>
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+
+        <div class="filas">
+          <div class="columnas">
+            <label class="label-info" for="name"
+              >*Nombre
+              <input class="input-text" type="text" name="Nombre" id="name" />
+            </label>
+
+            <label class="label-info" for="date"
+              >Fecha
+              <input class="input-text" type="date" name="fecha" id="date" />
+            </label>
+
+            <textarea>Descripción </textarea>
+          </div>
+
+          <div class="columnas">
+            <label class="label-info" for="especie"
+              >*Especie
+              <select class="input-text" type="text" name="specie" id="especie">
+                <option>Humano</option>
+                <option>Extraterreste</option>
+                <option>Animal</option>
+                <option>Insecto</option>
+              </select>
+            </label>
+            <label class="label-info" for="file"
+              >Agregar foto
+              <input
+                class="archivo"
+                type="file"
+                name="archivo"
+                id="file"
+                placeholder="Seleccionar archivo"
+              />
+            </label>
+
+            <label class="poder-personaje" for="poderes">
+              Poderes
+              <label id="poderes"
+                ><input
+                  type="checkbox"
+                  name="power"
+                  id="poderes"
+                  value="Volar"
+                />
+                Volar
+              </label>
+              <label id="poderes"
+                ><input
+                  type="checkbox"
+                  name="power"
+                  id="poderes"
+                  value="SuperInteligencia"
+                />
+                SuperInteligencia</label
+              >
+              <label id="poderes"
+                ><input
+                  type="checkbox"
+                  name="power"
+                  id="poderes"
+                  value="    Vista de rayo láser"
+                />
+                Vista de rayo láser</label
+              >
+              <label id="poderes"
+                ><input
+                  type="checkbox"
+                  name="power"
+                  id="poderes"
+                  value="Billetera gorda"
+                />
+                Billetera gorda</label
+              >
+            </label>
+            <hr />
+            <label class="poder-personaje">
+              Tipo de personaje
+              <label id="personajes">
+                <input type="radio" name="tipo" /> Héroe / Heroina
+              </label>
+              <label id="personajes">
+                <input type="radio" name="tipo" /> Villano / Villana
+              </label>
+            </label>
+          </div>
+        </div>
+        <button type="submit">Añadir</button>
+      </form>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados a TDW</p>
+      <i class="fa-brands fa-github"></i>
+    </footer>
+  </body>
+</html>
